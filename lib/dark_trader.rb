@@ -14,7 +14,6 @@ require 'open-uri'
 URL='https://coinmarketcap.com/all/views/all/'
 
 
-
 def crypto_open_file
 
   # 1/ Ouverture du fichier avec nokogiri et uri.open 
@@ -115,7 +114,5 @@ def dark_trader
 
 end
 
-
 # Lancement du programme principal :
 dark_trader
-
