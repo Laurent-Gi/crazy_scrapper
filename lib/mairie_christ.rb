@@ -64,7 +64,7 @@ def get_townhall_email(townhalls_urls_and_cities)
   list_townhall_email = list_townhall_urls.each{ |url_hall|
 
     # Lecture d'une page html url_hall (de la ville) pour chaque mairie
-    Nokogiri::HTML(open(url_hall)).xpath('//*[contains(text(), "@")]').text
+    Nokogiri::HTML(URI.open(url_hall)).xpath('//*[contains(text(), "@")]').text
   }
   
   # -=-=-=- Init d'un Array (tableau de hash, conformément au format demandé) -=-=-=-
